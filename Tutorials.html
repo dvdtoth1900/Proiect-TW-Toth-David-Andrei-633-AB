@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+     <meta charset="UTF-8">
+         <title>Tutorials</title>
     <head>
-        <meta charset="UTF-8">
-        <title>Tutorials</title>
-        <style>
+         <style type="text/css"> 
+          body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(234, 127, 77);
+                margin: 40px;
+                color:white;
+            } 
+            
         p.large {font-size:48px;}
+         .butoane {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+         button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"] {
+            background-color: #e89a3c;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #eea827;
+        }
+
         </style>
     </head>
     <body>
@@ -13,11 +43,17 @@
         </header>
         <meta charset="UTF-8">
         <title>Tutorials</title>
-         <p>Hey</p>
         <img src="C:\Users\User\Downloads\download (1).png"><br>
-         <a href="Foam Crafting.html">Foam Crafting</a><br>
-         <a href="Wig styling.html">Wig styling</a><br>
-         <a href="Prop making.html">Prop making</a>
-          
+       <div class="butoane">
+ <a href="Foam Crafting.html">
+  <button>Tutorials</button>
+</a>
+ <a href="Prop making.html">
+  <button>Options</button>
+</a>
+ <a href="Wig styling.html">
+  <button>Newsletter</button>
+</a>
+            </div>
     </body>
 </html>
