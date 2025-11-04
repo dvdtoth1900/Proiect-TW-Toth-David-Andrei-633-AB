@@ -1,25 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>cinnabomb's tutorials</title>
-        <style>
-        p.large {font-size:48px;}
+         <style type="text/css">  
+         .container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: rgb(223, 148, 36);
+  padding: 5px;
+}
+.container div {
+  background-color: rgb(220, 138, 22);
+  padding: 10px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container div.menu {
+  grid-area: menu;
+}
+.container div.content {
+  grid-area: content;
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+        
+        body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(234, 127, 77);
+                margin: 40px;
+                color:rgb(214, 116, 31);
+            }
+            h1{
+                font-size: 24px;
+            }
+            p{
+                font: size 48px;
+            }
+            .butoane {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+         button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-style: inherit;
+        }
+
+        button[type="submit"] {
+            background-color: #e89a3c;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #eea827;
+        }
+
         </style>
     </head>
     <body>
-        <header>
-            <p class="large">cinnabomb's tutorials</p> 
-        </header>
-        <h1><i>Welcome to cinnabomb's tutorials! Here you can find any type of tutorial for cosplay. It's time to enter in your character's personality!</i></h1>
-       <img src="C:\Users\User\Desktop\download (4).jfif">
-       <h1>Follow me on Instagram!</h1>
-       <a href=" https://www.instagram.com/cinnabombcos/">cinnabombcos</a><br>
-        <a href="Tutorials.html">Tutorials</a><br>
-       <a href="Settings.html">Settings</a><br>
-       <a href="Newsletter.html">Click here to subscribe to the newsletter!</a>
-      
+        <div class="container">
+          <div class="header"><h1>cinnabomb's tutorials</h1></div>
+        <div class="content"><p>Welcome to cinnabomb's tutorials! Here you can find any type of tutorial for cosplay. It's time to enter in your character's personality!</p>><br>
+            <img src="C:\Users\User\Desktop\download.jfif" alt="description" width="value" height="value">
+        </div>
 
+              <div class="menu">
+    <div class="butoane">
+   <a href="https://www.instagram.com/cinnabombcos/">
+  <button>cinnabombcos(Instagram account)</button>
+</a>
+ <a href="Tutorials.html">
+  <button>Tutorials</button>
+</a>
+ <a href="Options.html">
+  <button>Options</button>
+</a>
+</div>
+</div>
+<div class="footer">
+ <a href="Newsletter.html">
+  <button>Newsletter</button>
+  </a>
+</div>
+</div>
 
     </body>
 </html>
