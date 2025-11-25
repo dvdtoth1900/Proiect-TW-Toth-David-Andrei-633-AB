@@ -1,0 +1,113 @@
+<!DOCTYPE html>             
+    <head>
+        <html lang="en">
+     <meta charset="UTF-8">
+         <title>Newsletter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style type="text/css"> 
+          body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(227, 112, 41);
+                margin: 40px;
+                color:rgb(249, 189, 136);
+            } 
+            .imaaa{
+                display: block;
+                display: flex;
+                justify-content: center;
+            }
+            
+        p.large {font-size:48px;}
+         .butoane {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+         button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+             background-color: #f0b976;
+            color: rgb(115, 56, 5);
+            border: dotted ;
+            border-color: #c16f0a;
+        }
+         button:hover {box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+          background-color: #ab4c09;
+          color: #f0b976;
+        }
+
+        button[type="submit"] {
+            background-color: #e89a3c;
+            color: rgb(115, 56, 5);
+        }
+         @media screen and (min-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .menu {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "content"
+      "menu"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    margin: 10px;
+  }
+
+  .butoane {
+    flex-direction: column;
+  }
+}
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <p class="large">Tutorials</p> 
+        </header>
+        <meta charset="UTF-8">
+        <title>Tutorials</title>
+        <p>Here you can press one of the buttons from the bottom in order to choose your domain of interest! </p><br>
+        <div class="imaaa">
+        <img src="C:\Users\User\Downloads\WhatsApp Image 2025-10-14 at 15.27.27.jpeg" width="300" ,height="250"><br>
+        </div>
+       <div class="butoane">
+ <a href="Foam Crafting.html">
+  <button>Foam crafting</button>
+</a>
+ <a href="Prop making.html">
+  <button>Prop making</button>
+</a>
+ <a href="Wig styling.html">
+  <button>Wig styling</button>
+</a>
+<a href="main.html">
+    <button>Back to Home</button>
+</a>
+            </div>
+    </body>
+</html>

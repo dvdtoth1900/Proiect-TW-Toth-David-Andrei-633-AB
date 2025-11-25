@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foam Crafting - cinnabomb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(227, 112, 41);
+            margin: 40px;
+            color: rgb(241, 199, 157);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .imaaa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+          p.large {font-size:48px;}
+
+        .butoane {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #f0b976;
+            color: rgb(115, 56, 5);
+            border: 2px dotted #c16f0a;
+        }
+
+        button:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+            background-color: #ab4c09;
+            color: #f0b976;
+        }
+
+        /* BACK TO TOP */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 12px 15px;
+            border-radius: 50px;
+            font-size: 16px;
+            background-color: #f0b976;
+            color: #733805;
+            border: 2px dotted #c16f0a;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        #topBtn:hover {
+            background-color: #ab4c09;
+            color: #f0b976;
+        }
+
+        /* RESPONSIVE */
+        @media screen and (max-width: 899px) {
+            body {
+                margin: 10px;
+            }
+
+            .butoane {
+                flex-direction: column;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+ <header>
+            <p class="large">Foam Crafting</p> 
+         </header>
+ 
+
+<p>
+Good evening Ladies and Gents, In this fine Instructable I will be showing and instructing you how to work with EVA Foam for costuming and prop creation.
+
+If you have any questions regarding the tutorial, making of your own cosplay/costume or just want to say hi please send me a message on my facebook page (https://www.facebook.com/ToweringProps).
+
+Over the several steps listed here I'll demonstrate techniques when working with EVA foam for new and experienced cosplayers.
+
+What you'll need!
+<br><br>
+EVA foam, Poster card, Xacto blade, Scissors, Heat Gun, Soldering Iron, Glue Gun, Rotary Tool, Straps, Buckles, Velcro, Ruler, Marker, Latex Caulk, Plasti Dip, Spray paint.
+<br><br>
+So let's get started!
+
+</p>
+
+<div class="imaaa">
+    <img src="C:\Users\User\Downloads\WhatsApp Image 2025-11-18 at 09.16.08.jpeg" width="350">
+</div>
+
+<div class="butoane">
+    <a href="Tutorials.html">
+        <button>Back to tutorials</button>
+    </a>
+</div>
+
+
+<button id="topBtn" onclick="goTop()">↑ Back to Top</button>
+
+<script>
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+
+function goTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

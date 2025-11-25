@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>cinnabomb's tutorials</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style type="text/css">  
+            .imaaa{
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+         
+        
+        body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(227, 112, 41);
+                margin: 40px;
+                color:rgb(241, 199, 157);
+            }
+            h1{
+                font-size: 24px;
+            }
+             p.large {font-size:48px;}
+            .butoane {
+    display: flex;
+    justify-content:center; 
+    gap: 10px;
+    margin-top: 20px;
+
+        }
+         button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-style:normal;
+             background-color: #f0b976;
+            color: rgb(115, 56, 5);
+            border: dotted ;
+            border-color: #c16f0a;
+        }
+         button:hover {box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+          background-color: #ab4c09;
+          color: #f0b976;
+        }
+
+        button[type="submit"] {
+            background-color: #e89a3c;
+            color: rgb(213, 98, 98);
+        }
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 12px 15px;
+            border-radius: 50px;
+            font-size: 16px;
+            background-color: #f0b976;
+            color: #733805;
+            border: 2px dotted #c16f0a;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        #topBtn:hover {
+            background-color: #ab4c09;
+            color: #f0b976;
+        }
+          @media screen and (min-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .menu {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "content"
+      "menu"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    margin: 10px;
+  }
+
+  .butoane {
+    flex-direction: column;
+  }
+}
+
+        </style>
+    </head>
+     <body>
+         <header>
+            <p class="large">Prop making</p> 
+         </header>
+ 
+ 
+        <p>Cosplay prop making involves choosing materials like EVA foam, thermoplastics, or 3D printing filaments, creating templates, and using various techniques to build and finish the prop. Start with reference photos to plan the design and size, test your techniques on scraps, and build the prop from a central piece outward for complex designs. Painting and detailing with products like plasti-dip and using tools such as a heat gun or rotary tool will help achieve a realistic finish. </p>
+<p>1. Planning and design
+Gather references: Collect reference images from official art, screenshots, or action figures to accurately capture the prop's details, proportions, and angles.
+Create templates: Use materials like poster board to create templates. For complex shapes, a 3D modeling program or methods like covering an object in tape and scanning the pieces can be helpful.
+Scale and size: Check your prop's size against a reference like your hand or head. For armor, start with the center piece to ensure it fits correctly before building outwards.
+Save templates: Keep your final templates for future projects. </p>
+<p>2. Materials and tools
+EVA foam: A versatile and popular choice for its flexibility and affordability. It can be used for armor, weapons, and more.
+Thermoplastics: Materials like Worbla are heated to become pliable, allowing you to mold them into firm, shell-like shapes, notes Dremel.
+3D printing: PLA (polylactic acid) filament is a common choice for 3D printing, suitable for various props from lightsabers to helmets, says Dremel.
+Basic household items: Cardboard can be used for simpler props, layered for strength and painted for detail, according to EyeCandys.
+Essential tools: A heat gun is crucial for shaping foam and thermoplastics, while a rotary tool can be used for carving details, explains Make Magazine. </p>
+<p>3. Building techniques
+Test on scraps: Always test a new technique or product on scrap materials first to avoid mistakes on your final piece, advises Make Magazine.
+Heat sealing: Before painting, heat-seal EVA foam with a heat gun to create a non-porous surface. This is essential for proper paint adhesion.
+Combining methods: Don't be afraid to combine different techniques and materials for the best results. </p>
+<p>4. Painting and finishing
+Priming: Use a primer like Plastidip to seal the foam and create a surface that can be painted. It's much easier than hand-painting the entire prop, notes Reddit.
+Painting: Apply paint with a brush or airbrush to add details and gradients.
+Adding detail: Use things like fabric or metallic tape for extra details and finishing touches. </p><br>
+ <div class="imaaa">
+        <img src="C:\Users\User\Downloads\WhatsApp Image 2025-11-18 at 09.16.08 (1).jpeg" width="300" ,height="250"><br>
+        </div>
+
+         <div class="butoane">
+ 
+<a href="Tutorials.html">
+    <button>Back to the main page of tutorials</button>
+</a>
+            </div>
+            <button id="topBtn" onclick="goTop()">↑ Back to Top</button>
+
+<script>
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+
+function goTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+   
+    </body>
+</html>

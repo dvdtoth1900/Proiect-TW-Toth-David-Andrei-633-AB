@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>cinnabomb's tutorials</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style type="text/css">  
+            .imaaa{
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+         
+        
+        body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(227, 112, 41);
+                margin: 40px;
+                color:rgb(241, 199, 157);
+            }
+            h1{
+                font-size: 24px;
+            }
+             p.large {font-size:48px;}
+            .butoane {
+    display: flex;
+    justify-content:center; 
+    gap: 10px;
+    margin-top: 20px;
+
+        }
+         button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-style:normal;
+             background-color: #f0b976;
+            color: rgb(115, 56, 5);
+            border: dotted ;
+            border-color: #c16f0a;
+        }
+         button:hover {box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+          background-color: #ab4c09;
+          color: #f0b976;
+        }
+
+        button[type="submit"] {
+            background-color: #e89a3c;
+            color: rgb(213, 98, 98);
+        }
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 12px 15px;
+            border-radius: 50px;
+            font-size: 16px;
+            background-color: #f0b976;
+            color: #733805;
+            border: 2px dotted #c16f0a;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        #topBtn:hover {
+            background-color: #ab4c09;
+            color: #f0b976;
+        }
+          @media screen and (min-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .menu {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "content"
+      "menu"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    margin: 10px;
+  }
+
+  .butoane {
+    flex-direction: column;
+  }
+}
+
+        </style>
+    </head>
+     <body>
+         <header>
+            <p class="large">Wig styling</p> 
+         </header>
+ 
+        <p>The first step to achieving your desired look for your cosplay is picking the color that works best with your vision. Start with your character’s hue or basic color on a color wheel, such as red or green. Next, think about the tone, brightness and saturation levels. </p>
+
+
+
+<p>To understand this, visualize for a moment a character like Zero Two (second character from image above) and Persephone (third character). Fusion Vanilla Pink would typically be the better choice because it is the lightest shade of pink that we offer, and Zero Two has hair that's significantly lighter. Raspberry Pink, on the other hand, has more of a deeper shade of pink with purple undertones. Hinata (first character) has a very dark and deep shade of blue so our Midnight Blue would be the most fitting because it is our darkest and deepest color in the blue family.</p> 
+
+
+
+<p>Of course, the main battle you may struggle with is not being able to see the color in person. Different computer monitors, phones and iPads are all calibrated differently and have different settings that may alter the colors. To ensure color accuracy, we strongly recommend purchasing color samples first. </p><br>
+ <div class="imaaa">
+        <img src="C:\Users\User\Downloads\WhatsApp Image 2025-11-18 at 10.58.49.jpeg" width="300" ,height="250"><br>
+        </div>
+
+         <div class="butoane">
+ 
+<a href="Tutorials.html">
+    <button>Back to the main page of tutorials</button>
+</a>
+            </div>
+            <button id="topBtn" onclick="goTop()">↑ Back to Top</button>
+
+<script>
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+
+function goTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+   
+    </body>
+</html>
